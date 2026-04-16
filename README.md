@@ -32,7 +32,7 @@ This Model Context Protocol (MCP) server provides a comprehensive interface for 
 You can install the package directly from GitHub:
 
 ```bash
-npm install -g jasondsmith72/CWM-API-Gateway-MCP
+npm install -g @jasondsmith72/cwm-api-gateway-mcp
 ```
 
 This method automatically handles all dependencies and provides a simpler configuration for Claude Desktop.
@@ -57,7 +57,7 @@ This method automatically handles all dependencies and provides a simpler config
 For the NPM installation method, simply run:
 
 ```bash
-npm install -g jasondsmith72/CWM-API-Gateway-MCP
+npm install -g @jasondsmith72/cwm-api-gateway-mcp
 ```
 
 For manual installation:
@@ -95,7 +95,7 @@ For manual installation:
 For the NPM installation method, simply run:
 
 ```bash
-sudo npm install -g jasondsmith72/CWM-API-Gateway-MCP
+sudo npm install -g @jasondsmith72/cwm-api-gateway-mcp
 ```
 
 For manual installation:
@@ -195,7 +195,7 @@ There are two methods to integrate with Claude Desktop:
 Install the package using NPM:
 
 ```bash
-npm install -g jasondsmith72/CWM-API-Gateway-MCP
+npm install -g @jasondsmith72/cwm-api-gateway-mcp
 ```
 
 Then configure Claude Desktop (`claude_desktop_config.json`):
@@ -203,11 +203,11 @@ Then configure Claude Desktop (`claude_desktop_config.json`):
 ```json
 {
   "mcpServers": {
-    "CWM-API-Gateway-MCP": {
+    "cwm-api-gateway-mcp": {
       "command": "npx",
       "args": [
         "-y",
-        "@jasondsmith72/CWM-API-Gateway-MCP"
+        "@jasondsmith72/cwm-api-gateway-mcp"
       ],
       "env": {
         "CONNECTWISE_API_URL": "https://na.myconnectwise.net/v4_6_release/apis/3.0",
@@ -228,9 +228,9 @@ If you've cloned the repository and installed the dependencies, you can use the 
 ```json
 {
   "mcpServers": {
-    "CWM-API-Gateway-MCP": {
+    "cwm-api-gateway-mcp": {
       "command": "node",
-      "args": ["C:/path/to/CWM-API-Gateway-MCP/bin/server.js"],
+      "args": ["C:/path/to/cwm-api-gateway-mcp/bin/server.js"],
       "env": {
         "CONNECTWISE_API_URL": "https://na.myconnectwise.net/v4_6_release/apis/3.0",
         "CONNECTWISE_COMPANY_ID": "your_company_id",
@@ -250,9 +250,9 @@ If you prefer to use the Python script directly:
 ```json
 {
   "mcpServers": {
-    "CWM-API-Gateway-MCP": {
+    "cwm-api-gateway-mcp": {
       "command": "python",
-      "args": ["C:/path/to/CWM-API-Gateway-MCP/api_gateway_server.py"],
+      "args": ["C:/path/to/cwm-api-gateway-mcp/api_gateway_server.py"],
       "env": {
         "CONNECTWISE_API_URL": "https://na.myconnectwise.net/v4_6_release/apis/3.0",
         "CONNECTWISE_COMPANY_ID": "your_company_id",
@@ -270,9 +270,9 @@ For macOS and Linux, use the appropriate path format:
 ```json
 {
   "mcpServers": {
-    "CWM-API-Gateway-MCP": {
+    "cwm-api-gateway-mcp": {
       "command": "python3",
-      "args": ["/path/to/CWM-API-Gateway-MCP/api_gateway_server.py"],
+      "args": ["/path/to/cwm-api-gateway-mcp/api_gateway_server.py"],
       "env": {
         "CONNECTWISE_API_URL": "https://na.myconnectwise.net/v4_6_release/apis/3.0",
         "CONNECTWISE_COMPANY_ID": "your_company_id",

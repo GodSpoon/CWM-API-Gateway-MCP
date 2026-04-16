@@ -30,7 +30,7 @@ const result = spawn.sync(
   [pythonScript, ...process.argv.slice(2)],
   { 
     stdio: 'inherit',
-    env: process.env
+    env: { ...process.env, PYTHONPATH: rootDir }
   }
 );
 
